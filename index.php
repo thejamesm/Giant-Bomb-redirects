@@ -21,6 +21,8 @@ $p = 'https://raw.githubusercontent.com/thejamesm/Giant-Bomb-redirects/master';
 
 $url_file = "$p/urls.txt";
 $urls = file($url_file, FILE_IGNORE_NEW_LINES);
+$misc_file = "$p/misc.txt";
+$miscs = file($misc_file, FILE_IGNORE_NEW_LINES);
 $twitter_acct_file = "$p/twitter_accts.txt";
 $twitter_accts = file($twitter_acct_file, FILE_IGNORE_NEW_LINES);
 ?>
@@ -40,7 +42,7 @@ $twitter_accts = file($twitter_acct_file, FILE_IGNORE_NEW_LINES);
     <body>
 <?php
 addSection('Giant Bomb', $urls);
-addSection('Misc', $misc);
+addSection('Misc', $miscs);
 ?>
         <section>
             <h1>Twitter</h1>
