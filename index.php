@@ -1,3 +1,29 @@
+<?php
+
+function addSection($heading, $urls) {
+    echo "\t\t<section>\n";
+    echo "\t\t\t<h1>$heading</h1>\n";
+
+    foreach ($urls as $url) {
+        if ($url[0] == '!') {
+            $url = substr($url, 1);
+            echo "<span class=\"expired\">$url</span><br>\n";
+        } else {
+            echo "<a href=\"http://$url\">$url</a><br>\n";
+        }
+    }
+
+    echo "\t\t</section>\n\n";
+}
+
+
+$p = 'https://raw.githubusercontent.com/thejamesm/Giant-Bomb-redirects/master';
+
+$url_file = "$p/urls.txt";
+$urls = file($url_file, FILE_IGNORE_NEW_LINES);
+$twitter_acct_file = "$p/twitter_accts.txt";
+$twitter_accts = file($twitter_acct_file, FILE_IGNORE_NEW_LINES);
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,44 +38,17 @@
         </script>
     </head>
     <body>
+<?php
+addSection('Giant Bomb', $urls);
+addSection('Misc', $misc);
+?>
         <section>
-            <h1>Giant Bomb</h1>
-            <a href="http://abbyzboyz.com">abbyzboyz.com</a><br>
-            <a href="http://abbyfrombrooklyn.biz">abbyfrombrooklyn.biz</a><br>
-            <a href="http://anothervideogamewebsite.com">anothervideogamewebsite.com</a><br>
-            <a href="http://awasteofbandwidth.com">awasteofbandwidth.com</a><br>
-            <a href="http://bombagigante.com">bombagigante.com</a><br>
-            <a href="http://cornfights.com">cornfights.com</a><br>
-            <a href="http://dogbottom.com">dogbottom.com</a><br>
-            <a href="http://dontcallnorm.com">dontcallnorm.com</a><br>
-            <a href="http://fightingame.science">fightingame.science</a><br>
-            <a href="http://fightinggame.science">fightinggame.science</a><br>
-            <a href="http://fuckdanryckert.com">fuckdanryckert.com</a><br>
-            <a href="http://giantasshole.com">giantasshole.com</a><br>
-            <a href="http://giantboat.com">giantboat.com</a><br>
-            <a href="http://gooddestinystuff.biz">gooddestinystuff.biz</a><br>
-            <a href="http://guyswhoplayawholelotofvideo.games">guyswhoplayawholelotofvideo.games</a><br>
-            <a href="http://hotsauceparty.biz">hotsauceparty.biz</a><br>
-            <a href="http://murderis.land">murderis.land</a><br>
-            <a href="http://nuke.com">nuke.com</a><br>
-            <a href="http://rivalvideogamewebsite.com">rivalvideogamewebsite.com</a><br>
-            <a href="http://snakesnakesnake.com">snakesnakesnake.com</a><br>
-            <a href="http://spookyslide.com">spookyslide.com</a><br>
-            <a href="http://superobjectivevideogame.review">superobjectivevideogame.review</a><br>
-            <a href="http://themostvideogame.review">themostvideogame.review</a><br>
-            <a href="http://thenumbertwopodcastintheworld.com">thenumbertwopodcastintheworld.com</a><br>
-            <a href="http://videogames.com">videogames.com</a><br>
-        </section>
-        <section>
-            <h1>Misc</h1>
-            <a href="http://batmanbatmanbatman.info">batmanbatmanbatman.info</a><br>
-            <a href="http://cocainemountain.com">cocainemountain.com</a><br>
-            <a href="http://danryckert.eu">danryckert.eu</a><br>
-            <a href="http://gamebomb.ru">gamebomb.ru</a><br>
-            <a href="http://giantabby.com">giantabby.com</a><br>
-            <a href="http://giantblooper.com">giantblooper.com</a><br>
-            <a href="http://giantbuilding.com">giantbuilding.com</a><br>
-            <a href="http://mariopartyparty.com">mariopartyparty.com</a><br>
+            <h1>Twitter</h1>
+<?php
+foreach ($twitter_accts as $twitter_acct) {
+    echo "<a href=\"http://twitter.com/$twitter_acct\">@$twitter_acct</a><br>\n";
+}
+?>
         </section>
     </body>
 </html>
