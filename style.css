@@ -1,7 +1,5 @@
 body {
     background-color: #000;
-    transform: rotate(180deg);
-    min-height: calc(100vh - 18px);
 }
 
 section {

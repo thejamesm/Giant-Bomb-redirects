@@ -31,13 +31,8 @@ $twitter_accts = file($twitter_acct_file, FILE_IGNORE_NEW_LINES);
     <head>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta name="google" value="notranslate">
-        <title>sʇɔǝɹıpǝɹ qɯo𐐒 ʇuɐı⅁</title>
+        <title>Giant Bomb redirects</title>
         <link rel="stylesheet" href="style.css">
-        <script>
-            window.onload = function() {
-                window.scrollTo( 0, document.body.scrollHeight );
-            };
-        </script>
     </head>
     <body>
 <?php
