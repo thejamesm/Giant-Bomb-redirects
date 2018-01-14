@@ -32,7 +32,7 @@ $twitter_accts = file($twitter_acct_file, FILE_IGNORE_NEW_LINES);
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta name="google" value="notranslate">
         <title>Giant Bomb redirects</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gb-style.css">
     </head>
     <body>
 <?php
