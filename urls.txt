@@ -1,7 +1,7 @@
 abbyfrombrooklyn.biz
 abbyzboyz.com
 anothervideogamewebsite.com
-awasteofbandwidth.com
+!awasteofbandwidth.com
 bombagigante.com
 cornfights.com
 dogbottom.com
@@ -28,7 +28,7 @@ nuke.com
 onebighole.com
 promoves.stream
 rivalvideogamewebsite.com
-snakesnakesnake.com
+!snakesnakesnake.com
 spookyslide.com
 superobjectivevideogame.review
 themostvideogame.review
