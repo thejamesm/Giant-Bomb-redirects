@@ -23,7 +23,7 @@ h1 {
     margin: 0px;
 }
 
-a, a:active, a:focus, a:hover {
+a, a:active, a:focus, a:hover, .expired {
     display: inline-block;
     margin-left: 1em;
     text-indent: -1em;
@@ -47,4 +47,10 @@ a:active, a:focus, a:hover {
 
 .small a {
     font-weight: 700;
+}
+
+span.expired {
+    text-decoration: line-through;
+    color: #222;
+    cursor: default;
 }
