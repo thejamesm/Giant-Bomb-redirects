@@ -1,4 +1,4 @@
-# Giant-Bomb-redirects
+# Giant Bomb redirects
 This is a page that lists URLs that redirect to giantbomb.com or associated
 destinations. It's based on a very similar page I did for Waypoint redirects.
 
