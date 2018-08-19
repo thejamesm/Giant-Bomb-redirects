@@ -25,6 +25,8 @@ $misc_file = "$p/misc.txt";
 $miscs = file($misc_file, FILE_IGNORE_NEW_LINES);
 $twitter_acct_file = "$p/twitter_accts.txt";
 $twitter_accts = file($twitter_acct_file, FILE_IGNORE_NEW_LINES);
+$meta_file = "$p/meta.txt";
+$metas = file($meta_file, FILE_IGNORE_NEW_LINES);
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,5 +49,9 @@ foreach ($twitter_accts as $twitter_acct) {
 }
 ?>
         </section>
+
+<?php
+addSection('Meta', $metas);
+?>
     </body>
 </html>
