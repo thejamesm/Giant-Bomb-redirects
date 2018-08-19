@@ -4,7 +4,7 @@ destinations. It's based on a very similar page I did for Waypoint redirects.
 
 The page exists under a number of aliases:
 
-[explosion.zone](https://explosion.zone)
+[explosion.zone](https://explosion.zone)  
 [haunted.domains/suıɐɯop˙pǝʇunɐɥ](https://haunted.domains/suıɐɯop˙pǝʇunɐɥ)  
 [haunted.domains/gb](https://haunted.domains/gb)  
 [somewhat.haunted.domains](https://somewhat.haunted.domains)  
