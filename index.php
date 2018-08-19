@@ -43,7 +43,7 @@ addSection('Misc', $miscs);
             <h1>Twitter</h1>
 <?php
 foreach ($twitter_accts as $twitter_acct) {
-    echo "<a href=\"http://twitter.com/$twitter_acct\">@$twitter_acct</a><br>\n";
+    echo "<a href=\"https://twitter.com/$twitter_acct\">@$twitter_acct</a><br>\n";
 }
 ?>
         </section>
