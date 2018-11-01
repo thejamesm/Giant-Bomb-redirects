@@ -6,7 +6,7 @@ danryckert.club
 danryckert.eu
 deertier.com/gb/
 gamebomb.ru
-giantabby.com
+!giantabby.com
 giantblooper.com
 giantbomb.tv
 giantbomb2.com
