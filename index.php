@@ -5,11 +5,12 @@ function addSection($heading, $urls) {
     echo "\t\t\t<h1>$heading</h1>\n";
 
     foreach ($urls as $url) {
+        $name = preg_replace('/^www\./', '', $url);
         if ($url[0] == '!') {
             $url = substr($url, 1);
-            echo "<span class=\"expired\">$url</span><br>\n";
+            echo "<span class=\"expired\">$name</span><br>\n";
         } else {
-            echo "<a href=\"http://$url\">$url</a><br>\n";
+            echo "<a href=\"http://$url\">$name</a><br>\n";
         }
     }
 
