@@ -7,7 +7,7 @@ function addSection($heading, $urls) {
     foreach ($urls as $url) {
         $name = preg_replace('/^www\./', '', $url);
         if ($url[0] == '!') {
-            $url = substr($url, 1);
+            $name = substr($name, 1);
             echo "<span class=\"expired\">$name</span><br>\n";
         } else {
             echo "<a href=\"http://$url\">$name</a><br>\n";
@@ -46,7 +46,12 @@ addSection('Misc', $miscs);
             <h1>Twitter</h1>
 <?php
 foreach ($twitter_accts as $twitter_acct) {
-    echo "<a href=\"https://twitter.com/$twitter_acct\">@$twitter_acct</a><br>\n";
+    if ($twitter_acct[0] == '!') {
+        $twitter_acct = substr($twitter_acct, 1);
+        echo "<span class=\"expired\">@$twitter_acct</span><br>\n";
+    } else {
+        echo "<a href=\"https://twitter.com/$twitter_acct\">@$twitter_acct</a><br>\n";
+    }
 }
 ?>
         </section>
