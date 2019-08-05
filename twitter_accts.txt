@@ -1,4 +1,4 @@
-GB_Quotes
+!GB_Quotes
 GBDudersFeed
 GBWikiBot
 GiantBombLive
