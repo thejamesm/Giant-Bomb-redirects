@@ -1,14 +1,20 @@
 # Giant Bomb redirects
+
+This project and its associated websites are no longer active. Please feel
+free to fork it should you wish to carry the torch.
+
+_Original README:_
+
 This is a page that lists URLs that redirect to giantbomb.com or associated
 destinations. It's based on a very similar page I did for Waypoint redirects.
 
 The page exists under a number of aliases:
 
-[explosion.zone](https://explosion.zone)  
-[haunted.domains/suıɐɯop˙pǝʇunɐɥ](https://haunted.domains/suıɐɯop˙pǝʇunɐɥ)  
-[haunted.domains/gb](https://haunted.domains/gb)  
-[somewhat.haunted.domains](https://somewhat.haunted.domains)  
-[slightly.haunted.domains](https://slightly.haunted.domains)  
+~[explosion.zone](https://explosion.zone)~  
+~[haunted.domains/suıɐɯop˙pǝʇunɐɥ](https://haunted.domains/suıɐɯop˙pǝʇunɐɥ)~  
+~[haunted.domains/gb](https://haunted.domains/gb)~  
+~[somewhat.haunted.domains](https://somewhat.haunted.domains)~  
+~[slightly.haunted.domains](https://slightly.haunted.domains)~  
 
 Please feel free to make your own contributions. I try to keep it up-to-date,
 but I'm not too involved in chat or the community at large, so I miss a fair
